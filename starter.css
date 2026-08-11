@@ -1,3 +1,11 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   interpolate-size: allow-keywords;
   font-family: system-ui, sans-serif;
@@ -55,6 +63,10 @@ legend {
 select,
 ::picker(select) {
   appearance: base-select;
+}
+
+[popover] {
+  margin: revert;
 }
 
 dialog {
